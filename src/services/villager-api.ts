@@ -21,11 +21,16 @@ export const getVillager = (id: string) => {
     header: { Origin: null}
   }
 
-  return fetch(`https://cors-anywhere.herokuapp.com/https://ac-vill.herokuapp.com/villagers${id}`, requestParam)
+  return fetch(`https://cors-anywhere.herokuapp.com/https://ac-vill.herokuapp.com/villagers/${id}`, requestParam)
     .then(res => res.json())
-    .then(json => json.map((villager: { _id: any; name: any; image: any; }) => ({
-      _id: villager._id,
+    .then(villager => ({
       name: villager.name,
-      imageUrl: villager.image
-    })));
+      image: villager.image,
+      personality: villager.personality,
+      species: villager.species,
+      birthday: villager.birthday,
+      skill: villager.skill,
+      quote: villager.quote
+    }))
+   
 }

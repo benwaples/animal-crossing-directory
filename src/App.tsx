@@ -3,7 +3,7 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
 } from 'react-router-dom'
 import { VillagerDirectory } from './Components/containers/VillagerDirectory/VillagerDirectory';
 import { DetailedVillager } from './Components/containers/DetailedVillager/DetailedVillager'
@@ -15,7 +15,7 @@ function App() {
     <Router>
       <Switch>
         <Route exact path="/villagers" component={VillagerDirectory}/>
-        <Route exact path="/villagers/:id" component={DetailedVillager} />
+        <Route exact path="/villagers/:_id" component={DetailedVillager} />
       </Switch>
     </Router>
     </>
