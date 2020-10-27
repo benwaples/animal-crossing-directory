@@ -2,7 +2,9 @@
 
 exports[`VillagerList component snapshot should render a VillagerList Component 1`] = `
 <DocumentFragment>
-  <div>
+  <div
+    data-testid="villager list"
+  >
     <div>
       <h1>
         random String

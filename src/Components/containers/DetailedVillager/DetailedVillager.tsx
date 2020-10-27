@@ -4,7 +4,6 @@ import { getVillager } from '../../../services/villager-api'
 type Props = {
   match: { params: { _id: string}},
   name: string,
-
 }
 
 
@@ -24,7 +23,7 @@ export const DetailedVillager: React.FC<Props> = ({match}) => {
 
   if(loading) return <h1>Loading...</h1>
   return (
-    <div>
+    <div data-testid="detailedVillager">
       <h1>{villager.name}</h1>
       <img src={villager.image} alt={villager.name}/>
       <p><b>Personality:</b> {villager.personality}</p>

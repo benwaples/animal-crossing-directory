@@ -14,7 +14,7 @@ export const VillagerList = ({ villagers }: Props) => {
   const villagerElements = villagers.map(villager => <Villager key={villager.name} { ...villager }/>)
 
   return (
-    <div>
+    <div data-testid="villager list">
       {villagerElements}
     </div>
   )
