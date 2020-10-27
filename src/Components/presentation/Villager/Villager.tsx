@@ -14,7 +14,7 @@ export const Villager = ({ name, imageUrl, _id }: Props) => {
     <div>
       <h1>{name}</h1>
       <img src={imageUrl} alt={name}/>
-      <Link to={`/villagers/:${_id}`}>Learn More</Link>
+      <Link to={`/villagers/${_id}`}>Learn More</Link>
     </div>
   )
 }

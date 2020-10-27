@@ -13,11 +13,11 @@ export const DetailedVillager: React.FC<Props> = ({match}) => {
   const [villager, setVillager] = useState({name: '',image: '',personality: '',species: '',birthday: '',skill: '',quote: ''})
 
   const [loading, setLoading ] = useState(true)
-  
+
   const id: string = match.params._id
 
   useEffect(() => {
-    getVillager(id.substr(1))
+    getVillager(id)
       .then(villager => setVillager(villager))
       .finally(() => setLoading(false))
   }, [id])

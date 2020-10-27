@@ -11,7 +11,6 @@ type Props = {
 }
 
 export const VillagerList = ({ villagers }: Props) => {
-  console.log(villagers)
   const villagerElements = villagers.map(villager => <Villager key={villager.name} { ...villager }/>)
 
   return (
