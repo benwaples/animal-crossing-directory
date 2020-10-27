@@ -9,7 +9,6 @@ type Props = {
 }
 
 export const Villager = ({ name, imageUrl, _id }: Props) => {
-  console.log(_id)
   return (
     <div>
       <h1>{name}</h1>

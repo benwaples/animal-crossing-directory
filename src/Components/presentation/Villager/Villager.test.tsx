@@ -3,7 +3,7 @@ import { render } from '@testing-library/react'
 import { Villager } from './Villager'
 import { MemoryRouter } from 'react-router-dom'
 
-describe('Villager component', () => {
+describe('Villager component snapshot', () => {
   it('should render a villager component', () => {
     const { asFragment } = render(
     <MemoryRouter>

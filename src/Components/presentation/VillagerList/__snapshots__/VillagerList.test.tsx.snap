@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VillagerList component snapshot should render a VillagerList Component 1`] = `
+<DocumentFragment>
+  <div>
+    <div>
+      <h1>
+        random String
+      </h1>
+      <img
+        alt="random String"
+        src="random String"
+      />
+      <a
+        href="/villagers/random String"
+      >
+        Learn More
+      </a>
+    </div>
+    <div>
+      <h1>
+        random
+      </h1>
+      <img
+        alt="random"
+        src="random"
+      />
+      <a
+        href="/villagers/random"
+      >
+        Learn More
+      </a>
+    </div>
+    <div>
+      <h1>
+        String
+      </h1>
+      <img
+        alt="String"
+        src="String"
+      />
+      <a
+        href="/villagers/String"
+      >
+        Learn More
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
