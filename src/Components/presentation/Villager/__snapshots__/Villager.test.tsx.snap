@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Villager component should render a villager component 1`] = `
+<DocumentFragment>
+  <div>
+    <h1>
+      agent 2
+    </h1>
+    <img
+      alt="agent 2"
+      src="show me the villager"
+    />
+    <a
+      href="/villagers/villagerId"
+    >
+      Learn More
+    </a>
+  </div>
+</DocumentFragment>
+`;
